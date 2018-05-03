@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>Whats the Number?</title>
+</head>
+<body>
+    <div class="overlay">
+        <section class="container">
+            <div class="row">
+                <div class="col-twelve center">
+                    Welcome to the most simple game ever! Please try to avoid hitting the <i class="em em-boom"></i> number. The aim is to guess around that number and have that number as the last number standing. As you guess you'll be helped by the range shrinking. This can be fun if you play with others and see who is the one that hits the <i class="em em-boom"></i>!
+                </div>
+            </div>
+            <div class="center">
+                <input type="text" placeholder="" id="guess">     
+                <button onclick="numCheck()" class="checkButton">Check</button>
+            </div>
+            <div class="help">
+                <div class="rangeLine">
+                    Your Current range:
+                </div>
+                <div id="showRange">
+                    0 - 100
+                </div>
+            </div>
+            <div class="center">
+                <button onclick="resetGame()" class="resetButton">Restart</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
